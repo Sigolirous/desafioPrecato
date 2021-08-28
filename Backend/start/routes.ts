@@ -19,7 +19,8 @@
 */
 
 import Route from '@ioc:Adonis/Core/Route'
-
+/* Rota de teste */
+Route.get('/', () => {return 'Servidor Rodando Liso'})
 /* Rotas de credores */
 Route.post('/credores/criar', 'CredoresController.criar')
 Route.get('/credores/get/:id', 'CredoresController.get')
