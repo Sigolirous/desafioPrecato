@@ -12,12 +12,12 @@ Credores:
 
 ```json
  {
-	"id_credor": 2,
-    "nome_credor": "Jacinto Pinto Aquino Rego",
-    "cpf_credor": "11261546601",
-    "status_credor": 0,
-    "created_at": "2021-08-27T20:20:53.000-03:00",
-    "updated_at": "2021-08-27T20:20:53.000-03:00"
+	"id_credor": integer,
+    "nome_credor": string,
+    "cpf_credor": string,
+    "status_credor": boolean,
+    "created_at": timestamp,
+    "updated_at": timestamp
  }
 ```
 
@@ -25,11 +25,11 @@ Entidades Devedoras:
 
 ```json
 {
-	"id_devedor": 2,
-    "nome_ente_devedor": "Empresa de lavagem de dinheiro",
-    "cnpj_ente_devedor": "35852921000167",
-    "created_at": "2021-08-27T23:14:59.000-03:00",
-    "updated_at": "2021-08-27T23:14:59.000-03:00"
+	"id_devedor": integer,
+    "nome_ente_devedor": string,
+    "cnpj_ente_devedor": string,
+    "created_at": timestamp,
+    "updated_at": timestamp
 }
 ```
 
@@ -37,14 +37,14 @@ Pagamentos:
 
 ```json
 {
-	"id_remessa": 3,
-    "id_credor": 1,
-    "id_devedor": 1,
-    "valor_inicial": 3000,
-    "valor_final": 100,
-    "data": "2021-08-27T23:15:11.000-03:00",
-    "status_remessa": 1,
-    "motivo": "Remessa aprovada"
+	"id_remessa": integer,
+    "id_credor": integer,
+    "id_devedor": integer,
+    "valor_inicial": float,
+    "valor_final": float,
+    "data": timestamp,
+    "status_remessa": boolean,
+    "motivo": string
 }
 ```
 
